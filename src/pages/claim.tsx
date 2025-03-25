@@ -139,7 +139,7 @@ Prize Claim Application Form
 
 </h2>
 <p className="mb-2">Fill the form below to claim your winnings</p>
-<form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4">
+<form onSubmit={handleSubmit} className=" gap-4">
   {[
     { name: "fullname", placeholder: "Full Name" },
     { name: "email", type: "email", placeholder: "Email" },
