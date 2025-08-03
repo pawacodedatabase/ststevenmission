@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import logo from '../assets/LOGO-removebg-preview.png'
+import logo from '../assets/logo.png'
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -26,24 +26,20 @@ const Header = () => {
             <X size={32} />
           </button>
           <Link to="/" className="hover:text-purple-600" onClick={() => setMenuOpen(false)}>Home</Link>
-          <Link to="/about" className="hover:text-purple-600" onClick={() => setMenuOpen(false)}>About Us</Link>
-          <Link to="/winners" className="hover:text-purple-600" onClick={() => setMenuOpen(false)}>Winners List</Link>
-          <Link to="/prize-claim" className="hover:text-purple-600" onClick={() => setMenuOpen(false)}>Prize Claim</Link>
-          <Link to="/contact" className="hover:text-purple-600" onClick={() => setMenuOpen(false)}>Contact Us</Link>
-        </div>
+          <Link to="/oluwaseun" className="hover:text-purple-600" onClick={() => setMenuOpen(false)}>Oluwaseun Parish</Link>
+          <Link to="/true-vine" className="hover:text-purple-600" onClick={() => setMenuOpen(false)}>True Vine Parish</Link>
+              </div>
       )}
 
       {/* Desktop Navigation */}
       <nav className="hidden md:flex gap-6 text-gray-800 font-medium">
         <Link to="/" className="hover:text-purple-600">Home</Link>
-        <Link to="/about" className="hover:text-purple-600">About Us</Link>
-        <Link to="/winners" className="hover:text-purple-600">Winners List</Link>
-        <Link to="/prize-claim" className="hover:text-purple-600">Prize Claim</Link>
-        <Link to="/contact" className="hover:text-purple-600">Contact Us</Link>
-      </nav>
+        <Link to="/oluwaseun" className="hover:text-purple-600">Oluwaseun Parish</Link>
+        <Link to="/true-vine" className="hover:text-purple-600">True Vine Parish</Link>
+         </nav>
 
       {/* Logo on the right */}
-      <div className="text-xl font-bold text-purple-700"><img src={logo} width={100} /></div>
+      <div className="text-xl font-bold text-purple-700"> <Link to={'/'}><img src={logo} width={100} /></Link></div>
     </header>
   );
 };

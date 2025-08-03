@@ -1,67 +1,59 @@
-import { FaFacebookF, FaTwitter,  FaPhone, FaEnvelope } from "react-icons/fa";
-import logo from '../assets/LOGO-removebg-preview.png'
+
+import { Link } from 'react-router-dom';
+import logo from '../assets/logo.png';
+
 const Footer = () => {
   return (
     <footer className="bg-[#ccc] text-white py-10">
       <div className="max-w-6xl mx-auto px-6 lg:px-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
           
-          {/* About United Way Benefits */}
+          {/* About the Church */}
           <div>
-            <img src={logo} width="200" className="m-auto" />
+            <img src={logo} width="200" className="m-auto" alt="Church Logo" />
             <p className="text-black mt-3 text-sm">
-              Empowering individuals and families by providing financial assistance, 
-              health services, and community support programs.
-            </p>
+             ST. STEPHEN MISSION INT'L </p>
           </div>
 
-          {/* Navigation Links */}
+          {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold text-blue-800 ">Quick Links</h3>
+            <h3 className="text-lg font-semibold text-blue-800">Quick Links</h3>
             <ul className="mt-3 space-y-2 text-black">
               <li><a href="#" className="hover:text-blue-800 transition">Home</a></li>
-              <li><a href="#" className="hover:text-blue-800 transition">About Us</a></li>
-              <li><a href="#" className="hover:text-blue-800 transition">Programs</a></li>
-              <li><a href="#" className="hover:text-blue-800 transition">Resources</a></li>
-              <li><a href="#" className="hover:text-blue-800 transition">Contact</a></li>
+              <li><Link to={'/oluwaseun'}>Oluwaseun Parish</Link></li>
+              <li><Link to={'/true-vine'}>True Vine Parish</Link></li>
+              
             </ul>
           </div>
 
-          {/* Contact Information
-          <div>
-            <h3 className="text-lg font-semibold text-blue-800">Contact Us</h3>
-            <div className="text-black mt-3 text-sm flex flex-col justify-center ">
-                <div className="flex gap-2  "> <FaLocationArrow/> <p>123 Hope Street, New York, NY 10001</p></div>
-                <div className="flex gap-2  "> <FaPhone/> <p>(123) 456-7890 </p></div>
-                <div className="flex gap-2  "> <FaEnvelope/> <p>support@unitedwaybenefits.org</p></div>
-             
-            
-             
-            </div>
+          {/* Contact Info */}
+          {/* <div>
+            <h3 className="text-lg font-semibold text-blue-800">Visit Us</h3>
+            <p className="text-black mt-3 text-sm">
+              Lagelu Area Headquarters, Akobo, Ibadan<br />
+              Oyo State, Nigeria
+            </p>
           </div> */}
         </div>
 
-        {/* Social Media & Newsletter Section */}
+        {/* Social Media & Newsletter */}
         <div className="mt-8 flex flex-col md:flex-row items-center justify-between text-center">
           
           {/* Social Media Icons */}
-          <div className="flex space-x-4 mb-4 md:mb-0">
-            <a href="#" className="p-3 bg-gray-800 rounded-full hover:bg-blue-500 transition">
+          {/* <div className="flex space-x-4 mb-4 md:mb-0">
+            <a href="#" className="p-3 bg-gray-800 rounded-full hover:bg-blue-600 transition">
               <FaFacebookF className="text-white text-lg" />
             </a>
-            <a href="#" className="p-3 bg-gray-800 rounded-full hover:bg-blue-500 transition">
-              <FaTwitter className="text-white text-lg" />
+            <a href="#" className="p-3 bg-gray-800 rounded-full hover:bg-pink-600 transition">
+              <FaInstagram className="text-white text-lg" />
             </a>
-            <a href="#" className="p-3 bg-gray-800 rounded-full hover:bg-blue-500 transition">
-              <FaPhone className="text-white text-lg" />
+            <a href="#" className="p-3 bg-gray-800 rounded-full hover:bg-black transition">
+              <FaTiktok className="text-white text-lg" />
             </a>
-            <a href="#" className="p-3 bg-gray-800 rounded-full hover:bg-blue-500 transition">
-              <FaEnvelope className="text-white text-lg" />
-            </a>
-          </div>
+          </div> */}
 
-          {/* Newsletter Subscription */}
-          <div className="mt-4 md:mt-0">
+          {/* Newsletter */}
+          {/* <div className="mt-4 md:mt-0">
             <h3 className="text-lg font-semibold text-blue-800">Subscribe to Our Newsletter</h3>
             <div className="flex mt-3">
               <input 
@@ -73,12 +65,12 @@ const Footer = () => {
                 Subscribe
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Copyright */}
         <p className="text-gray-800 text-center text-sm mt-6">
-          &copy; {new Date().getFullYear()} United Way Benefits. All rights reserved.
+          &copy; {new Date().getFullYear()} ST. STEPHEN MISSION INT'L. All rights reserved.
         </p>
       </div>
     </footer>
