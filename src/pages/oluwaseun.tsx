@@ -29,33 +29,34 @@ const OluwaseunParish = () => {
           <div className="space-y-4">
             <p className="flex items-center gap-2">
               <FaMapMarkerAlt className="text-blue-800" />
-              Lagelu Area Headquarters, Akobo, Ibadan, Oyo State
+              Ccc Oluwaseun Parish Akobo Ibadan Nigeria Opp Weeldrop filling station 
+
             </p>
             <p className="flex items-center gap-2">
               <FaPhone className="text-blue-800" />
-              +234 000 000 000
+              +2348033956272
             </p>
-            <p className="flex items-center gap-2">
+            {/* <p className="flex items-center gap-2">
               <FaEnvelope className="text-blue-800" />
               email@oluwaseun
-            </p>
+            </p> */}
           </div>
 
           <div className="flex space-x-4 mt-4 md:mt-0">
-            <a href="#" className="p-3 bg-blue-800 text-white rounded-full hover:bg-blue-600 transition">
+            <a href="https://www.facebook.com/share/1Ef16zCvSJ/?mibextid=wwXIfr" className="p-3 bg-blue-800 text-white rounded-full hover:bg-blue-600 transition">
               <FaFacebookF />
             </a>
-            <a href="#" className="p-3 bg-pink-700 text-white rounded-full hover:bg-pink-500 transition">
+            <a href="https://www.instagram.com/oluwaseun_parish?igsh=c200aTN5bmV2amFj" className="p-3 bg-pink-700 text-white rounded-full hover:bg-pink-500 transition">
               <FaInstagram />
             </a>
-            <a href="#" className="p-3 bg-black text-white rounded-full hover:bg-gray-800 transition">
+            <a href="https://www.tiktok.com/@c.c.coluwaseunparishcita?_t=ZS-8zAzWMRAgDP&_r=1" className="p-3 bg-black text-white rounded-full hover:bg-gray-800 transition">
               <FaTiktok />
             </a>
           </div>
         </div>
       </section>
 
-      {/* Articles Section */}
+      
      
     </div>
   );
