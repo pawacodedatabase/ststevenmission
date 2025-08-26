@@ -1,4 +1,4 @@
-import { FaFacebookF, FaInstagram, FaTiktok, FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaTiktok, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 import { motion } from "framer-motion";
 import heroImage from "../assets/hero2.jpg"; // Replace with your actual hero image
 
@@ -29,7 +29,7 @@ const OluwaseunParish = () => {
           <div className="space-y-4">
             <p className="flex items-center gap-2">
               <FaMapMarkerAlt className="text-blue-800" />
-              Ccc Oluwaseun Parish Akobo Ibadan Nigeria Opp Weeldrop filling station 
+              CCC Oluwaseun Parish Akobo Ibadan Nigeria Opp Weeldrop filling station 
 
             </p>
             <p className="flex items-center gap-2">
@@ -56,7 +56,7 @@ const OluwaseunParish = () => {
         </div>
       </section>
 
-      
+
      
     </div>
   );
