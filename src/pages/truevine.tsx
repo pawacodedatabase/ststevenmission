@@ -1,4 +1,4 @@
-import { FaFacebookF, FaInstagram, FaTiktok, FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
+import {  FaMapMarkerAlt, } from "react-icons/fa";
 import { motion } from "framer-motion";
 import heroImage from "../assets/hero.jpg"; // Replace with your parish-specific image
 
