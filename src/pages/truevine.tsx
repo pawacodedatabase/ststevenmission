@@ -29,18 +29,18 @@ const TrueVineParish = () => {
           <div className="space-y-4">
             <p className="flex items-center gap-2">
               <FaMapMarkerAlt className="text-blue-800" />
-              [Insert Parish Location Here]
+             CCC True vine parish Dosumu area Eniosa Olorunda Ibadan
             </p>
-            <p className="flex items-center gap-2">
+            {/* <p className="flex items-center gap-2">
               <FaPhone className="text-blue-800" />
               +234 812 000 0000
             </p>
             <p className="flex items-center gap-2">
               <FaEnvelope className="text-blue-800" />
               info@truevineparish.org
-            </p>
+            </p> */}
           </div>
-
+{/* 
           <div className="flex space-x-4 mt-4 md:mt-0">
             <a href="#" className="p-3 bg-blue-800 text-white rounded-full hover:bg-blue-600 transition">
               <FaFacebookF />
@@ -51,7 +51,7 @@ const TrueVineParish = () => {
             <a href="#" className="p-3 bg-black text-white rounded-full hover:bg-gray-800 transition">
               <FaTiktok />
             </a>
-          </div>
+          </div> */}
         </div>
       </section>
 
